@@ -14,6 +14,8 @@
 		55C984F4228744E30087B04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C984F2228744E30087B04C /* LaunchScreen.storyboard */; };
 		55C984FF228744E30087B04C /* AppTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C984FE228744E30087B04C /* AppTwoTests.swift */; };
 		55C98515228746580087B04C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; };
+		55C986FE2287480B0087B04C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; };
+		55C987002287481C0087B04C /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 			remoteInfo = AppTwo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55C986FF2287480F0087B04C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55C987002287481C0087B04C /* SnapKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55C984E6228744E20087B04C /* AppTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C986FE2287480B0087B04C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +153,7 @@
 				55C984F6228744E30087B04C /* Sources */,
 				55C984F7228744E30087B04C /* Frameworks */,
 				55C984F8228744E30087B04C /* Resources */,
+				55C986FF2287480F0087B04C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,6 +452,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = AppTwoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +473,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = AppTwoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
