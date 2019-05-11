@@ -11,6 +11,8 @@
 		55C9821E22871E070087B04C /* MyNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9821D22871E070087B04C /* MyNetworkTests.swift */; };
 		55C9822022871E070087B04C /* MyNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C9821222871E070087B04C /* MyNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55C9822B22871E540087B04C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9822A22871E540087B04C /* Alamofire.framework */; };
+		55C9822C22871EE00087B04C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9822A22871E540087B04C /* Alamofire.framework */; };
+		55C9822E22871EF10087B04C /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9822A22871E540087B04C /* Alamofire.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +24,20 @@
 			remoteInfo = MyNetwork;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55C9822D22871EE40087B04C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55C9822E22871EF10087B04C /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55C9820F22871E070087B04C /* MyNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C9822C22871EE00087B04C /* Alamofire.framework in Frameworks */,
 				55C9821922871E070087B04C /* MyNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +154,7 @@
 				55C9821422871E070087B04C /* Sources */,
 				55C9821522871E070087B04C /* Frameworks */,
 				55C9821622871E070087B04C /* Resources */,
+				55C9822D22871EE40087B04C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,7 +421,9 @@
 		55C9822722871E070087B04C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = MyNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,7 +440,9 @@
 		55C9822822871E070087B04C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = MyNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
