@@ -10,6 +10,8 @@
 		55C981B32286EE9B0087B04C /* Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981A92286EE9B0087B04C /* Chat.framework */; };
 		55C981B82286EE9B0087B04C /* ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C981B72286EE9B0087B04C /* ChatTests.swift */; };
 		55C981BA2286EE9B0087B04C /* Chat.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C981AC2286EE9B0087B04C /* Chat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55C981C62286F2130087B04C /* Chatto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C42286F2130087B04C /* Chatto.framework */; };
+		55C981C72286F2130087B04C /* ChattoAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C52286F2130087B04C /* ChattoAdditions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		55C981B22286EE9B0087B04C /* ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C981B72286EE9B0087B04C /* ChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTests.swift; sourceTree = "<group>"; };
 		55C981B92286EE9B0087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C981C42286F2130087B04C /* Chatto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chatto.framework; path = ../../Carthage/Carthage/Build/iOS/Chatto.framework; sourceTree = "<group>"; };
+		55C981C52286F2130087B04C /* ChattoAdditions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChattoAdditions.framework; path = ../../Carthage/Carthage/Build/iOS/ChattoAdditions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C981C62286F2130087B04C /* Chatto.framework in Frameworks */,
+				55C981C72286F2130087B04C /* ChattoAdditions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 				55C981AB2286EE9B0087B04C /* Chat */,
 				55C981B62286EE9B0087B04C /* ChatTests */,
 				55C981AA2286EE9B0087B04C /* Products */,
+				55C981C32286F2130087B04C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,15 @@
 				55C981B92286EE9B0087B04C /* Info.plist */,
 			);
 			path = ChatTests;
+			sourceTree = "<group>";
+		};
+		55C981C32286F2130087B04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C981C42286F2130087B04C /* Chatto.framework */,
+				55C981C52286F2130087B04C /* ChattoAdditions.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +363,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = Chat/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,6 +388,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = Chat/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
