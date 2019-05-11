@@ -17,6 +17,8 @@
 		55C9847D22872A630087B04C /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9825C228720490087B04C /* Gallery.framework */; };
 		55C9847E22872A670087B04C /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9825E2287204B0087B04C /* SnapKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55C9847F22872A670087B04C /* Gallery.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9825C228720490087B04C /* Gallery.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55C9848C22872B0F0087B04C /* Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9848722872AD10087B04C /* Chat.framework */; };
+		55C9848D22872B0F0087B04C /* Chat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9848722872AD10087B04C /* Chat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 55C98237228720020087B04C;
 			remoteInfo = AppOne;
+		};
+		55C9848622872AD10087B04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C9848122872AD10087B04C /* Chat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C981A92286EE9B0087B04C;
+			remoteInfo = Chat;
+		};
+		55C9848822872AD10087B04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C9848122872AD10087B04C /* Chat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C981B22286EE9B0087B04C;
+			remoteInfo = ChatTests;
+		};
+		55C9848E22872B0F0087B04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C9848122872AD10087B04C /* Chat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C981A82286EE9B0087B04C;
+			remoteInfo = Chat;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +63,17 @@
 				55C9847F22872A670087B04C /* Gallery.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C9849022872B100087B04C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55C9848D22872B0F0087B04C /* Chat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -57,6 +91,7 @@
 		55C98252228720040087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C9825C228720490087B04C /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gallery.framework; path = ../../Carthage/Carthage/Build/iOS/Gallery.framework; sourceTree = "<group>"; };
 		55C9825E2287204B0087B04C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../Carthage/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		55C9848122872AD10087B04C /* Chat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chat.xcodeproj; path = ../../Modules/Chat/Chat.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C9848C22872B0F0087B04C /* Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +118,7 @@
 		55C9822F228720020087B04C = {
 			isa = PBXGroup;
 			children = (
+				55C9848022872AC60087B04C /* Dependencies */,
 				55C9823A228720020087B04C /* AppOne */,
 				55C9824F228720040087B04C /* AppOneTests */,
 				55C98239228720020087B04C /* Products */,
@@ -129,6 +166,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55C9848022872AC60087B04C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				55C9848122872AD10087B04C /* Chat.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		55C9848222872AD10087B04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C9848722872AD10087B04C /* Chat.framework */,
+				55C9848922872AD10087B04C /* ChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +194,12 @@
 				55C98235228720020087B04C /* Frameworks */,
 				55C98236228720020087B04C /* Resources */,
 				55C982602287206E0087B04C /* Carthage */,
+				55C9849022872B100087B04C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55C9848F22872B0F0087B04C /* PBXTargetDependency */,
 			);
 			name = AppOne;
 			productName = AppOne;
@@ -199,6 +255,12 @@
 			mainGroup = 55C9822F228720020087B04C;
 			productRefGroup = 55C98239228720020087B04C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55C9848222872AD10087B04C /* Products */;
+					ProjectRef = 55C9848122872AD10087B04C /* Chat.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				55C98237228720020087B04C /* AppOne */,
@@ -206,6 +268,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55C9848722872AD10087B04C /* Chat.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Chat.framework;
+			remoteRef = 55C9848622872AD10087B04C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C9848922872AD10087B04C /* ChatTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChatTests.xctest;
+			remoteRef = 55C9848822872AD10087B04C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		55C98236228720020087B04C /* Resources */ = {
@@ -238,6 +317,8 @@
 			inputPaths = (
 				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/Gallery.framework",
 				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/Chatto.framework",
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/ChattoAdditions.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -245,6 +326,8 @@
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Gallery.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Chatto.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ChattoAdditions.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -277,6 +360,11 @@
 			isa = PBXTargetDependency;
 			target = 55C98237228720020087B04C /* AppOne */;
 			targetProxy = 55C9824D228720040087B04C /* PBXContainerItemProxy */;
+		};
+		55C9848F22872B0F0087B04C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Chat;
+			targetProxy = 55C9848E22872B0F0087B04C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,6 +507,7 @@
 		55C98256228720040087B04C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
@@ -437,6 +526,7 @@
 		55C98257228720040087B04C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";

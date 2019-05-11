@@ -16,6 +16,7 @@
 		55C981D822871A8A0087B04C /* ChattoAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C52286F2130087B04C /* ChattoAdditions.framework */; };
 		55C981D922871A8D0087B04C /* Chatto.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C42286F2130087B04C /* Chatto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C981DA22871A8D0087B04C /* ChattoAdditions.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C52286F2130087B04C /* ChattoAdditions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55C9848B22872ADC0087B04C /* ChatClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9848A22872ADC0087B04C /* ChatClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		55C981B92286EE9B0087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C981C42286F2130087B04C /* Chatto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chatto.framework; path = ../../Carthage/Carthage/Build/iOS/Chatto.framework; sourceTree = "<group>"; };
 		55C981C52286F2130087B04C /* ChattoAdditions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChattoAdditions.framework; path = ../../Carthage/Carthage/Build/iOS/ChattoAdditions.framework; sourceTree = "<group>"; };
+		55C9848A22872ADC0087B04C /* ChatClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				55C981AC2286EE9B0087B04C /* Chat.h */,
 				55C981AD2286EE9B0087B04C /* Info.plist */,
+				55C9848A22872ADC0087B04C /* ChatClass.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				TargetAttributes = {
 					55C981A82286EE9B0087B04C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					55C981B12286EE9B0087B04C = {
 						CreatedOnToolsVersion = 10.1;
@@ -232,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C9848B22872ADC0087B04C /* ChatClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +384,7 @@
 		55C981BE2286EE9B0087B04C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -396,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schukin.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +411,7 @@
 		55C981BF2286EE9B0087B04C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

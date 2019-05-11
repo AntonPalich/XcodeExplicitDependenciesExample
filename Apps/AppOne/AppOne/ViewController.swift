@@ -6,6 +6,9 @@
 //  Copyright © 2019 Anton Schukin. All rights reserved.
 //
 
+import Chat
+import Chatto
+import ChattoAdditions
 import Gallery
 import SnapKit
 import UIKit
@@ -23,6 +26,9 @@ class ViewController: UIViewController {
             make.width.height.equalTo(50)
             make.center.equalTo(self.view)
         }
+
+        let chatClass = ChatClass()
+        print(chatClass)
     }
 }
 
