@@ -6,6 +6,7 @@
 //  Copyright © 2019 Anton Schukin. All rights reserved.
 //
 
+import CommonFeature
 import SnapKit
 import UIKit
 
@@ -22,6 +23,9 @@ class ViewController: UIViewController {
             make.width.height.equalTo(50)
             make.center.equalTo(self.view)
         }
+
+        let commonFeatureClass = CommonFeatureClass()
+        print(commonFeatureClass)
     }
 }
 

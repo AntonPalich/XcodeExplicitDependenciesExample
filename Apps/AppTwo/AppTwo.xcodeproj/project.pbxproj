@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55A8C3B7228869970079ED4E /* Chat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55A8C3A52288695A0079ED4E /* Chat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55A8C3BB2288699C0079ED4E /* MyNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55A8C3AF228869660079ED4E /* MyNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55C984EA228744E20087B04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C984E9228744E20087B04C /* AppDelegate.swift */; };
 		55C984EC228744E20087B04C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C984EB228744E20087B04C /* ViewController.swift */; };
 		55C984EF228744E20087B04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C984ED228744E20087B04C /* Main.storyboard */; };
@@ -16,15 +18,97 @@
 		55C98515228746580087B04C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; };
 		55C986FE2287480B0087B04C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; };
 		55C987002287481C0087B04C /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55C98712228748DE0087B04C /* CommonFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9870A228748BE0087B04C /* CommonFeature.framework */; };
+		55C98713228748DE0087B04C /* CommonFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9870A228748BE0087B04C /* CommonFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55C9890B22874A9C0087B04C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9890A22874A9C0087B04C /* Alamofire.framework */; };
+		55C9890E22874AA40087B04C /* Chatto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9890C22874AA40087B04C /* Chatto.framework */; };
+		55C9890F22874AA40087B04C /* ChattoAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9890D22874AA40087B04C /* ChattoAdditions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		55A8C3A42288695A0079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C39F2288695A0079ED4E /* Chat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C981A92286EE9B0087B04C;
+			remoteInfo = Chat;
+		};
+		55A8C3A62288695A0079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C39F2288695A0079ED4E /* Chat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C981B22286EE9B0087B04C;
+			remoteInfo = ChatTests;
+		};
+		55A8C3AE228869660079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C9820F22871E070087B04C;
+			remoteInfo = MyNetwork;
+		};
+		55A8C3B0228869660079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C9821822871E070087B04C;
+			remoteInfo = MyNetworkTests;
+		};
+		55A8C3B22288696D0079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C39F2288695A0079ED4E /* Chat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C981A82286EE9B0087B04C;
+			remoteInfo = Chat;
+		};
+		55A8C3B4228869700079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C9820E22871E070087B04C;
+			remoteInfo = MyNetwork;
+		};
+		55A8C3B8228869970079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C39F2288695A0079ED4E /* Chat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C981A82286EE9B0087B04C;
+			remoteInfo = Chat;
+		};
+		55A8C3BC2288699C0079ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C9820E22871E070087B04C;
+			remoteInfo = MyNetwork;
+		};
 		55C984FB228744E30087B04C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55C984DE228744E20087B04C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 55C984E5228744E20087B04C;
 			remoteInfo = AppTwo;
+		};
+		55C98709228748BE0087B04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C98702228748BE0087B04C /* CommonFeature.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C9849B2287427B0087B04C;
+			remoteInfo = CommonFeature;
+		};
+		55C9870B228748BE0087B04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C98702228748BE0087B04C /* CommonFeature.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C984A42287427C0087B04C;
+			remoteInfo = CommonFeatureTests;
+		};
+		55C98714228748DE0087B04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C98702228748BE0087B04C /* CommonFeature.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 55C9849A2287427B0087B04C;
+			remoteInfo = CommonFeature;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,9 +124,24 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55C98716228748DE0087B04C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55A8C3B7228869970079ED4E /* Chat.framework in Embed Frameworks */,
+				55A8C3BB2288699C0079ED4E /* MyNetwork.framework in Embed Frameworks */,
+				55C98713228748DE0087B04C /* CommonFeature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55A8C39F2288695A0079ED4E /* Chat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chat.xcodeproj; path = ../../Modules/Chat/Chat.xcodeproj; sourceTree = "<group>"; };
+		55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyNetwork.xcodeproj; path = ../../Modules/MyNetwork/MyNetwork.xcodeproj; sourceTree = "<group>"; };
 		55C984E6228744E20087B04C /* AppTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C984E9228744E20087B04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C984EB228744E20087B04C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +153,10 @@
 		55C984FE228744E30087B04C /* AppTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTwoTests.swift; sourceTree = "<group>"; };
 		55C98500228744E30087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C98514228746570087B04C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../Carthage/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		55C98702228748BE0087B04C /* CommonFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonFeature.xcodeproj; path = ../../Modules/CommonFeature/CommonFeature.xcodeproj; sourceTree = "<group>"; };
+		55C9890A22874A9C0087B04C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Carthage/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		55C9890C22874AA40087B04C /* Chatto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chatto.framework; path = ../../Carthage/Carthage/Build/iOS/Chatto.framework; sourceTree = "<group>"; };
+		55C9890D22874AA40087B04C /* ChattoAdditions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChattoAdditions.framework; path = ../../Carthage/Carthage/Build/iOS/ChattoAdditions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +164,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C9890F22874AA40087B04C /* ChattoAdditions.framework in Frameworks */,
+				55C98712228748DE0087B04C /* CommonFeature.framework in Frameworks */,
 				55C98515228746580087B04C /* SnapKit.framework in Frameworks */,
+				55C9890E22874AA40087B04C /* Chatto.framework in Frameworks */,
+				55C9890B22874A9C0087B04C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +183,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55A8C3A02288695A0079ED4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55A8C3A52288695A0079ED4E /* Chat.framework */,
+				55A8C3A72288695A0079ED4E /* ChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55A8C3AA228869660079ED4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55A8C3AF228869660079ED4E /* MyNetwork.framework */,
+				55A8C3B1228869660079ED4E /* MyNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		55C984DD228744E20087B04C = {
 			isa = PBXGroup;
 			children = (
+				55C98701228748B30087B04C /* Dependencies */,
 				55C984E8228744E20087B04C /* AppTwo */,
 				55C984FD228744E30087B04C /* AppTwoTests */,
 				55C984E7228744E20087B04C /* Products */,
@@ -120,9 +246,31 @@
 		55C98513228746570087B04C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55C9890A22874A9C0087B04C /* Alamofire.framework */,
+				55C9890C22874AA40087B04C /* Chatto.framework */,
+				55C9890D22874AA40087B04C /* ChattoAdditions.framework */,
 				55C98514228746570087B04C /* SnapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C98701228748B30087B04C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				55A8C39F2288695A0079ED4E /* Chat.xcodeproj */,
+				55C98702228748BE0087B04C /* CommonFeature.xcodeproj */,
+				55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		55C98703228748BE0087B04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C9870A228748BE0087B04C /* CommonFeature.framework */,
+				55C9870C228748BE0087B04C /* CommonFeatureTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,10 +284,16 @@
 				55C984E3228744E20087B04C /* Frameworks */,
 				55C984E4228744E20087B04C /* Resources */,
 				55C986FD228747290087B04C /* Carthage */,
+				55C98716228748DE0087B04C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55A8C3B5228869700079ED4E /* PBXTargetDependency */,
+				55A8C3B32288696D0079ED4E /* PBXTargetDependency */,
+				55C98715228748DE0087B04C /* PBXTargetDependency */,
+				55A8C3B9228869970079ED4E /* PBXTargetDependency */,
+				55A8C3BD2288699C0079ED4E /* PBXTargetDependency */,
 			);
 			name = AppTwo;
 			productName = AppTwo;
@@ -195,6 +349,20 @@
 			mainGroup = 55C984DD228744E20087B04C;
 			productRefGroup = 55C984E7228744E20087B04C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55A8C3A02288695A0079ED4E /* Products */;
+					ProjectRef = 55A8C39F2288695A0079ED4E /* Chat.xcodeproj */;
+				},
+				{
+					ProductGroup = 55C98703228748BE0087B04C /* Products */;
+					ProjectRef = 55C98702228748BE0087B04C /* CommonFeature.xcodeproj */;
+				},
+				{
+					ProductGroup = 55A8C3AA228869660079ED4E /* Products */;
+					ProjectRef = 55A8C3A9228869660079ED4E /* MyNetwork.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				55C984E5228744E20087B04C /* AppTwo */,
@@ -202,6 +370,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55A8C3A52288695A0079ED4E /* Chat.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Chat.framework;
+			remoteRef = 55A8C3A42288695A0079ED4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55A8C3A72288695A0079ED4E /* ChatTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChatTests.xctest;
+			remoteRef = 55A8C3A62288695A0079ED4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55A8C3AF228869660079ED4E /* MyNetwork.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyNetwork.framework;
+			remoteRef = 55A8C3AE228869660079ED4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55A8C3B1228869660079ED4E /* MyNetworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyNetworkTests.xctest;
+			remoteRef = 55A8C3B0228869660079ED4E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C9870A228748BE0087B04C /* CommonFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonFeature.framework;
+			remoteRef = 55C98709228748BE0087B04C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C9870C228748BE0087B04C /* CommonFeatureTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonFeatureTests.xctest;
+			remoteRef = 55C9870B228748BE0087B04C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		55C984E4228744E20087B04C /* Resources */ = {
@@ -233,12 +446,18 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/Chatto.framework",
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/ChattoAdditions.framework",
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/Alamofire.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Chatto.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ChattoAdditions.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -267,10 +486,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		55A8C3B32288696D0079ED4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Chat;
+			targetProxy = 55A8C3B22288696D0079ED4E /* PBXContainerItemProxy */;
+		};
+		55A8C3B5228869700079ED4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyNetwork;
+			targetProxy = 55A8C3B4228869700079ED4E /* PBXContainerItemProxy */;
+		};
+		55A8C3B9228869970079ED4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Chat;
+			targetProxy = 55A8C3B8228869970079ED4E /* PBXContainerItemProxy */;
+		};
+		55A8C3BD2288699C0079ED4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyNetwork;
+			targetProxy = 55A8C3BC2288699C0079ED4E /* PBXContainerItemProxy */;
+		};
 		55C984FC228744E30087B04C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 55C984E5228744E20087B04C /* AppTwo */;
 			targetProxy = 55C984FB228744E30087B04C /* PBXContainerItemProxy */;
+		};
+		55C98715228748DE0087B04C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommonFeature;
+			targetProxy = 55C98714228748DE0087B04C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +657,7 @@
 		55C98504228744E30087B04C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
@@ -431,6 +676,7 @@
 		55C98505228744E30087B04C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
