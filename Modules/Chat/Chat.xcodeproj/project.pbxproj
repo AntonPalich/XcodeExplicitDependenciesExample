@@ -12,6 +12,10 @@
 		55C981BA2286EE9B0087B04C /* Chat.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C981AC2286EE9B0087B04C /* Chat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55C981C62286F2130087B04C /* Chatto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C42286F2130087B04C /* Chatto.framework */; };
 		55C981C72286F2130087B04C /* ChattoAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C52286F2130087B04C /* ChattoAdditions.framework */; };
+		55C981D722871A8A0087B04C /* Chatto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C42286F2130087B04C /* Chatto.framework */; };
+		55C981D822871A8A0087B04C /* ChattoAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C52286F2130087B04C /* ChattoAdditions.framework */; };
+		55C981D922871A8D0087B04C /* Chatto.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C42286F2130087B04C /* Chatto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55C981DA22871A8D0087B04C /* ChattoAdditions.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C981C52286F2130087B04C /* ChattoAdditions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +27,21 @@
 			remoteInfo = Chat;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55C981C82286F7DF0087B04C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55C981D922871A8D0087B04C /* Chatto.framework in Copy Frameworks */,
+				55C981DA22871A8D0087B04C /* ChattoAdditions.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55C981A92286EE9B0087B04C /* Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C981B32286EE9B0087B04C /* Chat.framework in Frameworks */,
+				55C981D722871A8A0087B04C /* Chatto.framework in Frameworks */,
+				55C981D822871A8A0087B04C /* ChattoAdditions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +162,7 @@
 				55C981AE2286EE9B0087B04C /* Sources */,
 				55C981AF2286EE9B0087B04C /* Frameworks */,
 				55C981B02286EE9B0087B04C /* Resources */,
+				55C981C82286F7DF0087B04C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,7 +429,9 @@
 		55C981C12286EE9B0087B04C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = ChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,7 +448,9 @@
 		55C981C22286EE9B0087B04C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = ChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
