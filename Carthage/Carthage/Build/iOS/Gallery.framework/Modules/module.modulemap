@@ -1,0 +1,11 @@
+framework module Gallery {
+  umbrella header "Gallery.h"
+
+  export *
+  module * { export * }
+}
+
+module Gallery.Swift {
+    header "Gallery-Swift.h"
+    requires objc
+}

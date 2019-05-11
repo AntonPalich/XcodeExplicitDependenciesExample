@@ -1,0 +1,14 @@
+### Network
+github "Alamofire/Alamofire" == 4.8.2
+
+### Chat
+github "Badoo/Chatto" == 3.4.0
+
+### Gallery
+github "Badoo/Gallery" == 0.1.8
+
+### AppOne
+github "SnapKit/SnapKit" == 3.2.0
+
+### AppTwo
+### No dependencies

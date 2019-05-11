@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.8.2"
+github "Badoo/Chatto" "3.4.0"
+github "Badoo/Gallery" "0.1.8"
+github "SnapKit/SnapKit" "3.2.0"

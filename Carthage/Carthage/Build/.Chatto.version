@@ -1,0 +1,22 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.4.0",
+  "iOS" : [
+    {
+      "name" : "Chatto",
+      "hash" : "638ae7dd08ab81e3fd3c877c3c1a8bae46ecd3611ed53619b2fe68e25bf3b969"
+    },
+    {
+      "name" : "ChattoAdditions",
+      "hash" : "7960ff6f2380b471ccf5db074b87e1b17d2d47c09d5d09a76481fdb307987475"
+    }
+  ]
+}

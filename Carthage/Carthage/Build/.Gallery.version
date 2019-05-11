@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "0.1.8",
+  "iOS" : [
+    {
+      "name" : "Gallery",
+      "hash" : "a778ddf3d8e1b92c9e22b8ebbfccb50ecabc97421591a1e18d84f162874e1ab1"
+    }
+  ]
+}
