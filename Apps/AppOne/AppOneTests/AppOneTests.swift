@@ -6,6 +6,8 @@
 //  Copyright © 2019 Anton Schukin. All rights reserved.
 //
 
+import SnapKit
+import Gallery
 import XCTest
 @testable import AppOne
 
