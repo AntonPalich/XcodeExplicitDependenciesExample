@@ -36,6 +36,8 @@
 		55C9824C228720040087B04C /* AppOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C98250228720040087B04C /* AppOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOneTests.swift; sourceTree = "<group>"; };
 		55C98252228720040087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C9825C228720490087B04C /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gallery.framework; path = ../../Carthage/Carthage/Build/iOS/Gallery.framework; sourceTree = "<group>"; };
+		55C9825E2287204B0087B04C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../Carthage/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				55C9823A228720020087B04C /* AppOne */,
 				55C9824F228720040087B04C /* AppOneTests */,
 				55C98239228720020087B04C /* Products */,
+				55C9825B228720480087B04C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +99,15 @@
 			path = AppOneTests;
 			sourceTree = "<group>";
 		};
+		55C9825B228720480087B04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C9825E2287204B0087B04C /* SnapKit.framework */,
+				55C9825C228720490087B04C /* Gallery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +118,7 @@
 				55C98234228720020087B04C /* Sources */,
 				55C98235228720020087B04C /* Frameworks */,
 				55C98236228720020087B04C /* Resources */,
+				55C982602287206E0087B04C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -191,6 +204,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55C982602287206E0087B04C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/Gallery.framework",
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Gallery.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55C98234228720020087B04C /* Sources */ = {
@@ -361,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = AppOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = AppOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
