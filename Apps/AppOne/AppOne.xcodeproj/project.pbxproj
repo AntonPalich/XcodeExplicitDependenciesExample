@@ -19,6 +19,8 @@
 		55C9847F22872A670087B04C /* Gallery.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9825C228720490087B04C /* Gallery.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55C9848C22872B0F0087B04C /* Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9848722872AD10087B04C /* Chat.framework */; };
 		55C9848D22872B0F0087B04C /* Chat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9848722872AD10087B04C /* Chat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55C986F9228746E80087B04C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9825E2287204B0087B04C /* SnapKit.framework */; };
+		55C986FA228746E80087B04C /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9825C228720490087B04C /* Gallery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C9848C22872B0F0087B04C /* Chat.framework in Frameworks */,
+				55C986F9228746E80087B04C /* SnapKit.framework in Frameworks */,
+				55C986FA228746E80087B04C /* Gallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

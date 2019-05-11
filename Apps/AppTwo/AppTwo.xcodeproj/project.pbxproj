@@ -13,6 +13,7 @@
 		55C984F1228744E30087B04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C984F0228744E30087B04C /* Assets.xcassets */; };
 		55C984F4228744E30087B04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C984F2228744E30087B04C /* LaunchScreen.storyboard */; };
 		55C984FF228744E30087B04C /* AppTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C984FE228744E30087B04C /* AppTwoTests.swift */; };
+		55C98515228746580087B04C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C98514228746570087B04C /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		55C984FA228744E30087B04C /* AppTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C984FE228744E30087B04C /* AppTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTwoTests.swift; sourceTree = "<group>"; };
 		55C98500228744E30087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C98514228746570087B04C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../Carthage/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C98515228746580087B04C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				55C984E8228744E20087B04C /* AppTwo */,
 				55C984FD228744E30087B04C /* AppTwoTests */,
 				55C984E7228744E20087B04C /* Products */,
+				55C98513228746570087B04C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +100,14 @@
 			path = AppTwoTests;
 			sourceTree = "<group>";
 		};
+		55C98513228746570087B04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C98514228746570087B04C /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +118,7 @@
 				55C984E2228744E20087B04C /* Sources */,
 				55C984E3228744E20087B04C /* Frameworks */,
 				55C984E4228744E20087B04C /* Resources */,
+				55C986FD228747290087B04C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -191,6 +204,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55C986FD228747290087B04C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../../Carthage/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55C984E2228744E20087B04C /* Sources */ = {
@@ -361,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = AppTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = AppTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
