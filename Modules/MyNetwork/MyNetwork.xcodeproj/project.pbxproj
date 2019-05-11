@@ -10,6 +10,7 @@
 		55C9821922871E070087B04C /* MyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9820F22871E070087B04C /* MyNetwork.framework */; };
 		55C9821E22871E070087B04C /* MyNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9821D22871E070087B04C /* MyNetworkTests.swift */; };
 		55C9822022871E070087B04C /* MyNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C9821222871E070087B04C /* MyNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55C9822B22871E540087B04C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9822A22871E540087B04C /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		55C9821822871E070087B04C /* MyNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C9821D22871E070087B04C /* MyNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworkTests.swift; sourceTree = "<group>"; };
 		55C9821F22871E070087B04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C9822A22871E540087B04C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Carthage/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C9822B22871E540087B04C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 				55C9821122871E070087B04C /* MyNetwork */,
 				55C9821C22871E070087B04C /* MyNetworkTests */,
 				55C9821022871E070087B04C /* Products */,
+				55C9822922871E540087B04C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +88,14 @@
 				55C9821F22871E070087B04C /* Info.plist */,
 			);
 			path = MyNetworkTests;
+			sourceTree = "<group>";
+		};
+		55C9822922871E540087B04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C9822A22871E540087B04C /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +359,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = MyNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,6 +384,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/../../Carthage/Carthage/Build/iOS/\"";
 				INFOPLIST_FILE = MyNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
