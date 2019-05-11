@@ -1,0 +1,8 @@
+# Xcode
+xcuserdata
+*.xccheckout
+*.xcuserstate
+
+# Carthage
+Carthage/Carthage/Checkouts/*
+Carthage/Carthage/Build/iOS/*.bcsymbolmap
