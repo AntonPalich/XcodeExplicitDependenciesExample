@@ -1,4 +1,4 @@
-This is an example of explicit dependencies usage to manage complex dependency trees in your projects without using any 3rd party tools. This example uses Carthage to build and provide 3rd party frameworks.
+This is an example of explicit dependencies usage to manage complex dependency trees in your projects without using any 3rd party tools. This example uses Carthage to build and provide 3rd party frameworks. It was done with great help from [dive](https://github.com/dive) who researched this topic and provided his experties.
 
 You can check commit history for every single step that was made to setup this example.
 
